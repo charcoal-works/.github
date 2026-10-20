@@ -1,5 +1,5 @@
-name: Bug report / 问题反馈
-description: Something is broken or behaves unexpectedly. / 功能异常或行为不符合预期。
+name: Bug report
+description: Something is broken or behaves unexpectedly.
 title: "[bug]: "
 labels: ["bug"]
 body:
@@ -7,15 +7,13 @@ body:
     attributes:
       value: |
         Thanks for taking the time to report a problem.
-        感谢反馈。
 
         **Do not paste Apple ID / Google credentials, passwords, 2FA codes, session
         tokens, or personal data. Redact logs before submitting.**
-        **请勿粘贴 Apple ID / Google 账号密码、双重验证码、会话 token 或个人数据。提交前请先脱敏日志。**
   - type: dropdown
     id: product
     attributes:
-      label: Product / 产品
+      label: Product
       options:
         - Charcoal IPA
         - Charcoal APK
@@ -24,53 +22,53 @@ body:
   - type: input
     id: version
     attributes:
-      label: Version / 版本
-      description: App version and build number. / 应用版本与构建号。
+      label: Version
+      description: App version and build number.
       placeholder: "1.0.0 (1)"
     validations:
       required: true
   - type: input
     id: environment
     attributes:
-      label: Environment / 环境
-      description: OS version and hardware. / 系统版本与硬件。
+      label: Environment
+      description: OS version and hardware.
       placeholder: "macOS 26.1, Apple M2 / Windows 11 24H2, x64"
     validations:
       required: true
   - type: textarea
     id: steps
     attributes:
-      label: Steps to reproduce / 复现步骤
+      label: Steps to reproduce
       placeholder: |
-        1. Open ... / 打开 ...
-        2. Select ... / 选择 ...
-        3. See error / 看到错误
+        1. Open ...
+        2. Select ...
+        3. See error
     validations:
       required: true
   - type: textarea
     id: expected
     attributes:
-      label: Expected behavior / 预期行为
+      label: Expected behavior
     validations:
       required: true
   - type: textarea
     id: actual
     attributes:
-      label: Actual behavior / 实际行为
+      label: Actual behavior
     validations:
       required: true
   - type: textarea
     id: logs
     attributes:
-      label: Logs or screenshots / 日志或截图
-      description: Redact credentials and personal data. / 请先删除凭据和个人数据。
+      label: Logs or screenshots
+      description: Redact credentials and personal data.
       render: shell
   - type: checkboxes
     id: checks
     attributes:
-      label: Checklist / 检查项
+      label: Checklist
       options:
-        - label: I searched existing issues and discussions. / 我已搜索现有 issue 和 discussion。
+        - label: I searched existing issues and discussions.
           required: true
-        - label: I removed credentials, tokens, and personal data from logs. / 我已从日志中删除凭据、token 和个人数据。
+        - label: I removed credentials, tokens, and personal data from logs.
           required: true
