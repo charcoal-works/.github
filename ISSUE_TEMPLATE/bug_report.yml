@@ -1,0 +1,74 @@
+name: Bug report
+description: Something is broken or behaves unexpectedly.
+title: "[bug]: "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to report a problem.
+
+        **Do not paste Apple ID / Google account credentials, passwords, 2FA codes,
+        session tokens, or personal data.** Redact logs before submitting.
+  - type: dropdown
+    id: product
+    attributes:
+      label: Product
+      options:
+        - Charcoal IPA
+        - Charcoal APK
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: Version
+      description: App version and build number.
+      placeholder: "1.0.0 (1)"
+    validations:
+      required: true
+  - type: input
+    id: environment
+    attributes:
+      label: Environment
+      description: OS version and hardware.
+      placeholder: "macOS 26.1, Apple M2 / Windows 11 24H2, x64"
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      placeholder: |
+        1. Open ...
+        2. Select ...
+        3. See error
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual behavior
+    validations:
+      required: true
+  - type: textarea
+    id: logs
+    attributes:
+      label: Logs or screenshots
+      description: Redact credentials and personal data.
+      render: shell
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Checklist
+      options:
+        - label: I searched existing issues and discussions.
+          required: true
+        - label: I removed credentials, tokens, and personal data from logs.
+          required: true
