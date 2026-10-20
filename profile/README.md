@@ -4,7 +4,7 @@
 
 **Keep your app packages local.**
 
-Open-source desktop tools for retrieving and archiving app packages.
+Desktop tools for retrieving and archiving app packages. Private preview.
 
 </div>
 
@@ -12,8 +12,8 @@ Open-source desktop tools for retrieving and archiving app packages.
 
 | Product | Direction | Platform | Status |
 | --- | --- | --- | --- |
-| **[Charcoal IPA](https://github.com/charcoal-works/charcoal-ipa)** | App Store → IPA | macOS | `1.0.0` |
-| **[Charcoal APK](https://github.com/charcoal-works/charcoal-apk)** | Google Play → APK | macOS / Windows | `0.1.0` |
+| **Charcoal IPA** | App Store → IPA | macOS | Private preview |
+| **Charcoal APK** | Google Play → APK | macOS / Windows | Private preview |
 
 ## What we believe
 
@@ -21,22 +21,26 @@ Open-source desktop tools for retrieving and archiving app packages.
   There is no server in between.
 - **No DRM circumvention.** We only retrieve packages you are entitled to. No
   decryption, cracking, or patching.
-- **Open.** Apache-2.0 code, public issues, public design and roadmap.
+- **Open by default.** Apache-2.0 licensed. The app repositories are
+  private while the products are in preview.
 - **Auditable.** No telemetry. Updates and downloads should have verifiable
   provenance.
 
 ## Repositories
 
-- [charcoal-ipa](https://github.com/charcoal-works/charcoal-ipa) — macOS tool
-  for App Store packages, forked from
-  [Pastel](https://github.com/EEliberto/Pastel-macOS)
-- [charcoal-apk](https://github.com/charcoal-works/charcoal-apk) — macOS and
-  Windows tool for Google Play packages, mirror version history, and signature
-  comparison
+- **Charcoal IPA** — macOS tool for App Store packages, forked from
+  [Pastel](https://github.com/EEliberto/Pastel-macOS). Private preview.
+- **Charcoal APK** — macOS and Windows tool for Google Play packages, mirror
+  version history, and signature comparison. Private preview.
+- [brand](https://github.com/charcoal-works/.github/tree/main/brand) — public
+  icon and wordmark kit
 - [.github](https://github.com/charcoal-works/.github) — organization profile,
   community health files, and templates
 
 ## Get involved
+
+The application repositories are private during preview. Access is available on
+request.
 
 - Read [CONTRIBUTING.md](https://github.com/charcoal-works/.github/blob/main/CONTRIBUTING.md)
   before opening an issue.
