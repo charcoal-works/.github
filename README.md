@@ -16,3 +16,10 @@ do not define their own copy.
 
 Unless stated otherwise, content in this repository is licensed under the
 Apache License 2.0. See [LICENSE](LICENSE).
+
+## 中文说明
+
+本仓库承载 [Charcoal Works](https://github.com/charcoal-works) 的公开组织主页和默认社区健康文件。
+组织下未单独定义这些文件的仓库会自动继承。
+
+除特别说明外，本仓库内容按 Apache License 2.0 授权，见 [LICENSE](LICENSE)。

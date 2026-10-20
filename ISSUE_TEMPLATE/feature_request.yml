@@ -1,5 +1,5 @@
-name: Feature request
-description: Suggest an improvement or a new capability.
+name: Feature request / 功能建议
+description: Suggest an improvement or a new capability. / 提出改进或新功能。
 title: "[feat]: "
 labels: ["enhancement"]
 body:
@@ -7,44 +7,45 @@ body:
     attributes:
       value: |
         Describe the problem first, then the solution you have in mind.
+        请先描述问题，再说明你希望的方案。
   - type: dropdown
     id: product
     attributes:
-      label: Product
+      label: Product / 产品
       options:
         - Charcoal IPA
         - Charcoal APK
-        - Both
+        - Both / 两者
     validations:
       required: true
   - type: textarea
     id: problem
     attributes:
-      label: What problem are you trying to solve?
-      description: A concrete workflow or pain point, not just a missing feature.
+      label: What problem are you trying to solve? / 你想解决什么问题？
+      description: A concrete workflow or pain point, not just a missing feature. / 请给出具体的工作流或痛点，而不只是一个缺失的功能。
     validations:
       required: true
   - type: textarea
     id: proposal
     attributes:
-      label: Proposed solution
+      label: Proposed solution / 建议的方案
     validations:
       required: true
   - type: textarea
     id: alternatives
     attributes:
-      label: Alternatives considered
+      label: Alternatives considered / 考虑过的替代方案
   - type: textarea
     id: context
     attributes:
-      label: Additional context
-      description: Mockups, links, or examples from other tools.
+      label: Additional context / 补充信息
+      description: Mockups, links, or examples from other tools. / 草图、链接或其他工具的参考。
   - type: checkboxes
     id: checks
     attributes:
-      label: Checklist
+      label: Checklist / 检查项
       options:
-        - label: I searched existing issues and discussions.
+        - label: I searched existing issues and discussions. / 我已搜索现有 issue 和 discussion。
           required: true
-        - label: This request does not involve DRM circumvention or paid-content bypass.
+        - label: This request does not involve DRM circumvention or paid-content bypass. / 这个需求不涉及 DRM 绕过或付费内容破解。
           required: true
