@@ -13,7 +13,7 @@ Open-source desktop tools for retrieving and archiving app packages.
 | Product | Direction | Platform | Status |
 | --- | --- | --- | --- |
 | **[Charcoal IPA](https://github.com/charcoal-works/charcoal-ipa)** | App Store → IPA | macOS | `1.0.0` |
-| **Charcoal APK** | Google Play → APK | macOS / Windows | In design |
+| **[Charcoal APK](https://github.com/charcoal-works/charcoal-apk)** | Google Play → APK | macOS / Windows | `0.1.0` |
 
 ## What we believe
 
@@ -30,6 +30,9 @@ Open-source desktop tools for retrieving and archiving app packages.
 - [charcoal-ipa](https://github.com/charcoal-works/charcoal-ipa) — macOS tool
   for App Store packages, forked from
   [Pastel](https://github.com/EEliberto/Pastel-macOS)
+- [charcoal-apk](https://github.com/charcoal-works/charcoal-apk) — macOS and
+  Windows tool for Google Play packages, mirror version history, and signature
+  comparison
 - [.github](https://github.com/charcoal-works/.github) — organization profile,
   community health files, and templates
 
