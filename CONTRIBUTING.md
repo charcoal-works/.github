@@ -64,8 +64,12 @@ sh Scripts/BuildAdHocDMG.sh
 6. CI must pass. A maintainer will review.
 
 Do not include Apple ID / Google credentials, session tokens, Keychain exports,
-downloaded IPA/APK files, or build products (`dist/`, `DerivedData/`,
-`node_modules/`).
+private keys, certificates, provisioning profiles, signing material, downloaded
+IPA/APK files, or build products (`dist/`, `DerivedData/`, `node_modules/`).
+
+**Never publish a secret.** Private keys, signing identities, API tokens, and
+account credentials stay out of code, docs, issues, and pull requests. Use
+GitHub Actions secrets and environment protection for CI.
 
 ### Code style
 
@@ -153,7 +157,9 @@ sh Scripts/BuildAdHocDMG.sh
 5. 填写 PR 模板，写清你验证了什么。
 6. CI 必须通过，然后等待维护者 review。
 
-**不要提交**：Apple ID / Google 凭据、会话 token、Keychain 导出、下载的 IPA/APK、构建产物（`dist/`、`DerivedData/`、`node_modules/`）。
+**不要提交**：Apple ID / Google 凭据、会话 token、Keychain 导出、私钥、证书、描述文件、签名材料、下载的 IPA/APK、构建产物（`dist/`、`DerivedData/`、`node_modules/`）。
+
+**任何保密信息都不要写出来。** 私钥、签名身份、API token 和账号凭据不得出现在代码、文档、issue 或 PR 中。CI 使用 GitHub Actions secrets 和环境保护规则。
 
 ### 代码风格
 

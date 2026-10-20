@@ -33,6 +33,15 @@ Include, when possible:
 **Never include Apple ID or Google account passwords, 2FA codes, session
 tokens, or downloaded account data.** Redact logs before sending.
 
+### Secrets
+
+Never commit or publish private keys, certificates, provisioning profiles,
+signing identities, API tokens, or account credentials. CI secrets belong in
+GitHub Actions secrets with environment protection, never in workflow files.
+
+If a secret is exposed, rotate it first, then contact
+`security@charcoal-works.com`.
+
 ### What to expect
 
 - Acknowledgement within **3 business days**
@@ -93,6 +102,14 @@ reasonable window to fix the issue before publication.
 - 建议的修复方式
 
 **不要在报告中包含 Apple ID / Google 账号密码、双重验证码、会话 token 或下载的账号数据。** 发送前请先脱敏日志。
+
+### 保密原则
+
+不要在代码、文档、issue 或 PR 中提交或公开任何私钥、证书、描述文件、签名身份、
+API token 或账号凭据。CI 密钥只放在 GitHub Actions secrets 中，并启用环境保护规则，
+不要写进 workflow 文件。
+
+如果密钥已经泄露，请先轮换，再联系 `security@charcoal-works.com`。
 
 ### 响应时间
 
